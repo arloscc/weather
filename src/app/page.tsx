@@ -89,7 +89,7 @@ export default function Page() {
         <h1 id="kota" className="flex justify-center font-bold text-2xl p-4">
           <div className="justify-center flex w-screen">
             <div className="">
-              <div className="flex justify-center">{weatherData.name}</div>
+              <div className="flex justify-center">{weatherData['name']}</div>
               <svg
                 className="flex justify-center w-screen  my-12"
                 xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +109,7 @@ export default function Page() {
           </div>
         </h1>
         <h1 id="klasifikasi" className="flex justify-center p-4 font-semibold">
-          {weatherData.weather[0].main}
+          {weatherData['weather'][0]['main']}
         </h1>
         {/* ... */}
 
@@ -132,7 +132,7 @@ export default function Page() {
             </svg>
             <div>
               <h1>Kecepatan Angin.</h1>
-              <h1 id="wind">{weatherData.wind.speed}kmh/j</h1>
+              <h1 id="wind">{weatherData['wind']['speed']}kmh/j</h1>
             </div>
           </div>
           {/* ... */}
@@ -158,7 +158,7 @@ export default function Page() {
             </svg>
             <div>
               <h1>Temperatur</h1>
-              <h1 id="suhu">{weatherData.main.temp}°C</h1>
+              <h1 id="suhu">{weatherData['main']['temp']}°C</h1>
             </div>
           </div>
         </div>
