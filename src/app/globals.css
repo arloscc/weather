@@ -7,13 +7,15 @@
   @apply p-0 m-0 box-border;
 }
 
-body.light {
+body.light{
+  background-color: #e0e0e0;
   transition: 1s;
   /* Light theme styles */
   background: linear-gradient(to right, #f9f9f9, #e0e0e0);
 }
 
-body.dark {
+body.dark{
+  background-color: black;
   transition: 1s;
   /* Dark theme styles */
   background: linear-gradient(to right, #262626, #1a1919);
@@ -32,6 +34,7 @@ body.dark {
 
 }
 
+
 body {
 animation: transitionIn 0.75s;
 }
@@ -43,4 +46,16 @@ animation: transitionIn 0.75s;
 
 .theme:active {
   transform: scale(0.9);
+}
+
+body.light .theme-input {
+  /* Light theme styles */
+  background: #ffffff;
+  color: #000000;
+}
+
+body.dark .theme-input {
+  /* Dark theme styles */
+  background: #434343;
+  color: #ffffff;
 }

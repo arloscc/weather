@@ -21,6 +21,7 @@ export default function Page() {
   useEffect(() => {
     document.body.className = "";
     document.body.classList.add(theme);
+
   }, [theme]);
 
   if (!weatherData) {
@@ -63,7 +64,7 @@ export default function Page() {
         </div>
         <div className="flex gap-4 justify-center my-12">
           <input
-            className="border-2 py-2 px-4 rounded-3xl "
+            className="border-2 py-2 px-4 rounded-3xl theme-input"
             placeholder="Rusak gan inputnya"
             type="text"
           />
